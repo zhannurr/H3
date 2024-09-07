@@ -99,6 +99,9 @@ h1,h2,h3,h4,h5,h6{
 
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #F6E5CE;
     width: 370px;
     border-radius: 20px;
@@ -106,6 +109,7 @@ h1,h2,h3,h4,h5,h6{
     box-shadow: #FFC16C;
     margin-left: 65px;
     margin-bottom: -65px;
+    
 }
 .card_container {
     display: flex;
@@ -113,21 +117,26 @@ h1,h2,h3,h4,h5,h6{
     flex-wrap: wrap;
     margin-top: 100px;
 }
-#last{
-    padding-bottom: 80px;
-}
+
 .card_content {
-    text-align: center;
     padding: 16px;
+    text-align: center;
+    align-items: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .card .Btn{
-    margin-right: auto;
-    margin-left: auto;
+    
+    margin-top: 0px auto;
+    
 }
 .card img{
     margin: 17px 17px;
     width: 90%;
     height: 50%;
+    border-radius: 20px;
 }
 
 
@@ -140,6 +149,7 @@ h1,h2,h3,h4,h5,h6{
 
 
     padding: 5px;
+    margin-top: 80px;
     position: relative;
     width: 100%;
     bottom: 0;
