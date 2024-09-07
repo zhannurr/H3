@@ -1,27 +1,146 @@
-/* .header{
-    min-height: 100vh;
-    width: 100%;
-    background-color: blue;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-} */
-*{
+/* Style the body */
+body {
+    font-family:sans-serif;
+    background-color: rgb(255,247,236);
     margin: 0;
     padding: 0;
+
 }
-.nav{
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+    margin: 0;
+}
+
+
+/* Header styling */
+.header {
     display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-}
-.nav-links{
-    flex: 1;
-    text-align: right;
-}
-.nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12 px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     position: relative;
+}
+
+/* Navigation Links */
+.nav_links {
+    display: flex;
+    gap: 30px;  /* Add spacing between links */
+    justify-content: center;
+}
+
+.nav_links li {
+    list-style: none;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: #8ABE61;  
+    font-size: 14px; 
+    padding: 10px 30px;
+
+}
+.nav_links a.activ{
+    font-weight:900;
+}
+
+.nav_links a:hover {
+    color: rgb(54, 64, 57);  /* Add hover effect */
+}
+
+
+/* Button styling */
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 165px;
+    height: 50px;
+
+    text-decoration: none;
+    color: white;
+    background-color: darkgreen;
+    border-radius: 10px;
+ 
+}
+
+.Btn:hover {
+    background-color: green;
+}
+
+
+.welcome{
+    background-image: url(recepiespageimages/helathypagemainphoto.jpg);
+    background-size:cover;
+    background-position: center;
+    padding: 150px 0px ;
+}   
+.welcome .container {
+    background-color:rgba(230, 255, 236, 0.5);
+    border-radius: 100px;
+    padding: 80px;
+    width: 550px;
+    margin-left: 5%;
+   
+}
+
+.welcome_title {
+    font-weight: 700;
+    font-size: 50px;
+
+}
+.welcome_text {
+    margin: 40px 0px;
+    font-size: 24px;
+}
+
+
+
+
+
+.card {
+    background-color: #F6E5CE;
+    width: 370px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: #FFC16C;
+    margin-left: 65px;
+    margin-bottom: -65px;
+}
+.card_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+#last{
+    padding-bottom: 80px;
+}
+.card_content {
+    text-align: center;
+    padding: 16px;
+}
+.card .Btn{
+    margin-right: auto;
+    margin-left: auto;
+}
+.card img{
+    margin: 17px 17px;
+    width: 90%;
+    height: 50%;
+}
+
+
+
+.footer {
+    background-color:#FFC16C;
+    color: white;
+    text-align: center;
+    
+
+
+    padding: 5px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }
