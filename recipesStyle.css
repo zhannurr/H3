@@ -1,0 +1,171 @@
+body {
+    font-family:"Montserrat";
+    background-color: rgb(255,247,236);
+    margin: 0;
+    padding: 0;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+    margin: 0;
+}
+.logo {
+    margin-right: auto;
+    height: 50px;
+
+}
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    position: relative;
+}
+.header_nav{
+    margin-right: auto;
+}
+
+
+/* Navigation Links */
+.nav_links {
+    display: flex;
+    gap: 30px; 
+    justify-content: center;
+}
+
+.nav_links li {
+    list-style: none;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: #8ABE61;  
+    font-size: 14px; 
+    padding: 10px 30px;
+
+}
+.nav_links a.activ{
+    font-weight:900;
+}
+
+.nav_links a:hover {
+    color: rgb(54, 64, 57);  /* Add hover effect */
+}
+
+
+/* Button styling */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 165px;
+    height: 50px;
+
+    text-decoration: none;
+    color: white;
+    background-color: darkgreen;
+    border-radius: 30px;
+    font-weight: bold;
+ 
+}
+
+.btn:hover {
+    background-color: green;
+}
+
+
+.welcome{
+    background-image: url(recipespageimages/helathypagemainphoto.jpg);
+    background-size:cover;
+    background-position: center;
+    padding: 150px 0px ;
+}   
+.welcome .container {
+    color: rgb(1, 28, 1);
+    background-color:rgba(253, 204, 10, 0.097);
+    border-radius: 100px;
+    padding: 80px;
+    width: 550px;
+    margin-left: 5%;
+   
+}
+
+.welcome_title {
+    font-weight: bolder;
+    font-size: 45px;
+    text-transform: uppercase;
+
+}
+.welcome_text {
+    margin: 40px 0px;
+    font-size: 24px;
+}
+
+
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F6E5CE;
+    width: 370px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: #FFC16C;
+    margin-left: 65px;
+    margin-bottom: -65px;
+    
+}
+.card_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card_content {
+    padding: 16px;
+    text-align: center;
+    align-items: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_container h3{
+    font-weight: bolder;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.card .btn{
+    margin-top: 0px auto;
+}
+
+.card img{
+    margin: 17px 17px;
+    width: 90%;
+    height: 340px;
+    border-radius: 20px;
+}
+
+
+
+.footer {
+    background-color:#FFC16C;
+    color: white;
+    text-align: center;
+    
+
+
+    padding: 5px;
+    margin-top: 80px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
