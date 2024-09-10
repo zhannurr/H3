@@ -84,7 +84,7 @@ h1,h2,h3,h4,h5,h6{
 }   
 .welcome .container {
     color: rgb(1, 28, 1);
-    background-color:rgba(253, 204, 10, 0.097);
+    background-color:rgba(31, 244, 255, 0.097);
     border-radius: 100px;
     padding: 80px;
     width: 550px;
@@ -100,6 +100,13 @@ h1,h2,h3,h4,h5,h6{
 .welcome_text {
     margin: 40px 0px;
     font-size: 24px;
+}
+.welcome .btn{
+    background-color: rgb(11, 114, 114);
+}
+.welcome .btn:hover{
+    background-color: rgb(34, 133, 133);
+
 }
 
 
