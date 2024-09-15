@@ -4,6 +4,8 @@
  <meta charset="UTF-8">
  <meta name="Home" content="width=device-width, initialscale=1.0">
  <title>Home page</title>
+ <link rel = "stylesheet" href = "mainStyle.css">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -18,37 +20,45 @@
     </header>
 
     <main>
-        <section>
-            <h1>Welcome to Healthy Habits 🌿</h1>
-            <p>Your journey to a healthier, happier life begins here! At Healthy Habits, we believe that small, consistent changes lead to lasting results. Our goal is to empower you with the knowledge, tools, and motivation you need to create a balanced lifestyle that nurtures both your body and mind.
-            </p>
-            <blockquote>
-                "Health is a state of body, wellness is a state of being." — J. Stanford
-            </blockquote>
+        <section class="welcome"></section> 
+        <div class="welcome_text">
+            <p>Welcome to Healthy Habits Hub, your guide to living a healthy and balanced life! Whether you're just beginning your wellness journey or looking to refine your current routine, we’re here to help.</p>
+        </div>
+
+        <section class="citation">
+            <div class="container_citation">
+                <img src="img/stanford.png" alt="Stanford" class="citation_image">
+                    <blockquote class="citation_text">
+                        <p class="citation_words">
+                            "Health is a state of body, wellness is a state of being."
+                        </p>
+                        <cite class="citation_autor"> — J. Stanford</cite>
+                    </blockquote>
+            </div>
         </section>
 
-
-        <figure>
+        <!-- <figure>
             <img src="img/logo.svg" alt="e" style="width:50%;">
             <figcaption>Photo og logo</figcaption>
-        </figure>
+        </figure> -->
 
 
 
-        <section>
-            <h3>What You’ll Find:</h3>
-            <ul>
-                <li>
-                    Delicious Recipes: Explore easy, nutritious meals that are packed with flavor and perfect for any time of the day.
-                </li>
-                <li>
-                    Fitness Routines: Get inspired with workout routines tailored for all fitness levels, from beginners to seasoned pros.
-                </li>
-                <li>
-                    Wellness Tips: Practical advice on mindfulness, meal planning, and daily habits to help you thrive in every aspect of your life.
-                </li>
-            </ul>
+        <section class="features">
+            <h3 style="text-align: center; font-size: 40px;">What You’ll Find:</h3>
+            <div class="feature-item">
+                <img src="img/salad.png" class="features_img" alt="recipe"><h4>Delicious Recipes</h4><p>Easy, nutritious meals that are packed with flavor and perfect for any time of the day.</p>
+            </div>
+            <div class="feature-item">
+                <img src="img/women.png" class="features_img" alt="fitness"><h4>Fitness Routines</h4><p>Get inspired with workout routines tailored for all fitness levels, from beginners to seasoned pros.</p>
+            </div>
+            <div class="feature-item">
+                <img src="img/lotus.png"  class="features_img" alt="wellness"><h4>Wellness Tips</h4><p>Practical advice on mindfulness, meal planning, and daily habits to help you thrive in every aspect of your life.</p>
+            </div>
         </section>
+
+
+
 
 
         <section>
