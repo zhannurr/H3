@@ -59,30 +59,36 @@
 
 
 
-
-
-        <section>
-            <h3>Contact Us</h3>
-            <form>
-                <label>First Name</label>
-                <input type="text">
-                <label>Last Name</label>
-                <input type="text">
-
+        <section class="contact_us_form">
+            <div class="contact_us_container">
+                <h2>Contact Us</h2>
                 <br>
-
-                <label>Number</label>
-                <input type="text">
-
-                <br>
-
-                <label>Email</label>
-                <input type="email">
+                <form>
+                    <label for="fname">Full Name</label>
+                    <br>
+                    <input type="text" name="firstname" placeholder="Your name..">
+                    <small>First Name</small>
+                            
+                    <input type="text" name="lastname" placeholder="Your last name..">
+                    <small>Last Name</small>
+                    <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" placeholder="Your email...">
+                    <small>Email</small>
+    
+                    <br>
+                    <label for="subject">Message</label>
+                    <br>
+                    <textarea id="subject" name="subject" placeholder="Write yiur message..." style="height:200px"></textarea>
+                    
+                    <br>
+    
+                    <input type="submit" value="Submit">
                 
-                <br>
-
-                <input type="submit">
-            </form>
+                  </form>
+            </div>
+          
         </section>
     </main>
 
