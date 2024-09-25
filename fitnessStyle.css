@@ -109,73 +109,86 @@ html{
     font-size: 24px;
 }
 .welcome .btn{
-    background-color: rgb(11, 114, 114);
+    background-color: rgb(11, 114, 114) !important;
 }
 .welcome .btn:hover{
-    background-color: rgb(34, 133, 133);
+    background-color: rgb(34, 133, 133) !important;
 
 }
 
-
-
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #F6E5CE !important;
-    width: 370px;
-    border-radius: 20px !important;
-    overflow: hidden;
-    box-shadow: #FFC16C !important;
-    margin-left: 65px;
-    margin-bottom: -65px;
-    
+.cards_section {
+    padding: 60px 0;
 }
-.card:hover{
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+
 .card_container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
+    gap: 30px;
+    margin-top: 40px;
 }
 
-.card_body {
-    padding: 16px;
-    text-align: center;
-    align-items: center;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.card {
+    background-color: #F6E5CE !important;
+    border: none;
+    border-radius: 20px !important;
+    width: 370px;
+    height: 550px !important;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
-.card_container h3{
-    font-weight: bolder;
-    font-size: 25px;
-    text-transform: uppercase;
-}
-.card .btn{
-    background-color: rgb(11, 114, 114) !important;
-    margin-top: 0px auto;
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card .btn:hover{
-    background-color: rgb(34, 133, 133) !important;
-}
-.card img{
+.card img {
     margin: 17px 17px;
     width: 90%;
-    height: 220px;
+    height: 220px ;
     border-radius: 20px;
 }
 
+.card-body {
+    padding: 16px;
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
 
+.card-title {
+    font-weight: bolder;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
 
+.card-text {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #666;
+}
 
+.card .btn {
+    margin-top: 20px;
+    background-color:  rgb(11, 114, 114) !important;
+    margin: auto;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    
+}
+
+.card .btn:hover {
+    background-color: rgb(4, 163, 163) !important;
+}
 .footer {
     background-color:#FFC16C;
     color: white;
