@@ -114,8 +114,6 @@ html {
 
 
 
-
-
 .card {
     display: flex;
     flex-direction: column;
@@ -140,7 +138,7 @@ html {
     margin-top: 100px;
 }
 
-.card_content {
+.card_body {
     padding: 16px;
     text-align: center;
     align-items: center;
