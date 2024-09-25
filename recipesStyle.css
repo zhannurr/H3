@@ -1,6 +1,6 @@
 body {
-    font-family:"Montserrat";
-    background-color: rgb(255,247,236);
+    font-family:"Montserrat" !important;
+    background-color: rgb(255,247,236) !important;
     margin: 0;
     padding: 0;
 
@@ -63,24 +63,25 @@ html {
 
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 
-    width: 165px;
-    height: 50px;
+    width: 183px !important;
+    height: 50px !important;
 
     text-decoration: none;
-    color: white;
-    background-color: darkgreen;
-    border-radius: 30px;
-    font-weight: bold;
+    color: white !important;
+    background-color: darkgreen !important;
+    border-radius: 30px !important;
+    font-weight: bold !important;
  
 }
 
 .btn:hover {
-    background-color: green;
+    background-color: green !important;
 }
+
 
 
 
@@ -95,7 +96,7 @@ html {
     background-color:rgba(253, 204, 10, 0.097);
     border-radius: 100px;
     padding: 80px;
-    width: 550px;
+    width: 710px;
     margin-left: 5%;
    
 }
@@ -119,11 +120,11 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #F6E5CE;
+    background-color: #F6E5CE !important;
     width: 370px;
-    border-radius: 20px;
+    border-radius: 20px !important;
     overflow: hidden;
-    box-shadow: #FFC16C;
+    box-shadow: #FFC16C !important;
     margin-left: 65px;
     margin-bottom: -65px;
     
