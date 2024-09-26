@@ -23,6 +23,7 @@ html {
 
 
 
+
 .header {
     display: flex;
     justify-content: center;
@@ -30,14 +31,11 @@ html {
     padding: 20px 40px;
     position: relative;
 }
-.header_nav{
-    margin-right: auto;
-}
 
 .nav_links {
-    display: flex;
+    display: flex; 
     gap: 30px; 
-    justify-content: center;
+    list-style: none; 
 }
 
 .nav_links li {
@@ -49,15 +47,16 @@ html {
     color: #8ABE61;  
     font-size: 14px; 
     padding: 10px 30px;
-
 }
-.nav_links a.activ{
-    font-weight:900;
+
+.nav_links a.activ {
+    font-weight: 900;
 }
 
 .nav_links a:hover {
     color: rgb(54, 64, 57);  
 }
+
 
 
 
@@ -136,7 +135,7 @@ html {
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
 }
 
 .card img {
@@ -163,7 +162,7 @@ html {
 }
 
 .card-text {
-    margin: 15px 0;
+    margin: auto;
     font-size: 16px;
     color: #666;
 }

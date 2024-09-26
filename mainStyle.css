@@ -1,6 +1,6 @@
 body {
-    font-family:"Montserrat";
-    background-color: rgb(255,247,236);
+    font-family:"Montserrat" !important;
+    background-color: rgb(255,247,236) !important;
     margin: 0;
     padding: 0;
 
@@ -29,14 +29,11 @@ html {
     padding: 20px 40px;
     position: relative;
 }
-.header_nav{
-    margin-right: auto;
-}
 
 .nav_links {
-    display: flex;
+    display: flex; 
     gap: 30px; 
-    justify-content: center;
+    list-style: none; 
 }
 
 .nav_links li {
@@ -48,10 +45,10 @@ html {
     color: #8ABE61;  
     font-size: 14px; 
     padding: 10px 30px;
-
 }
-.nav_links a.activ{
-    font-weight:900;
+
+.nav_links a.activ {
+    font-weight: 900;
 }
 
 .nav_links a:hover {
@@ -62,18 +59,18 @@ html {
 
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 
-    width: 165px;
-    height: 50px;
+    width: 183px !important;
+    height: 50px !important;
 
     text-decoration: none;
-    color: white;
-    background-color: darkgreen;
-    border-radius: 30px;
-    font-weight: bold;
+    color: white !important;
+    background-color: darkgreen !important;
+    border-radius: 30px !important;
+    font-weight: bold !important;
  
 }
 

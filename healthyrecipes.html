@@ -6,21 +6,28 @@
  <title>Delicious & Nutritious Recipes</title>
  <link rel = "stylesheet" href = "recipesStyle.css">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header class="header">
         <img src="img/logo.svg" alt="logo" class="logo">
-        <nav class="header_nav">
-            <ul class="nav_links">
-                <li><a href="mainpage.html">HOME</a></li>
-                <li><a class="activ" href="healthyrecipes.html" >HEALTHY RECIPES</a></li>
-                <li><a href="fitness routines.html">FITNESS ROUTINES</a></li>
-             </ul>
+        <nav class="navbar" style="padding: 0;">
+            <div class="container-fluid">
+                <ul class="nav_links navbar-nav d-flex flex-row"> 
+                    <li class="nav-item">
+                        <a class="nav-link " href="mainpage.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link activ" href="healthyrecipes.html">HEALTHY RECIPES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fitness routines.html">FITNESS ROUTINES</a>
+                    </li>
+                </ul>
+                <a href="#features_part" class="btn">SEARCH</a>
+            </div>
         </nav>
-        <a href="#recipes1" class="btn">SEARCH</a>
     </header>
 
     <main>
