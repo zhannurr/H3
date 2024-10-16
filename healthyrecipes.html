@@ -41,7 +41,7 @@
   
         
         <section class="cards_section" id="recipes1">
-            <div class="container">
+            <div class="container" id="cards">
                 <div class="row">
                     <!-- Card 1 -->
                     <div class="col-md-4">
@@ -167,6 +167,8 @@
                 </div>
             </div>
         </section>
+        <button class="btn" id="bgcolor" onclick="changeBackgroundColor()">Изменить цвет фона</button>
+
     </main>
 
     <footer class="footer">
@@ -175,6 +177,37 @@
         </p>
         <p>SE - 2323</p>
       </footer>
+      <script src="healthyrecipesScript.js"></script>
+
+      
+<button class="open-button" onclick="openForm()">Contact Us</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h4>Leave your contacts and we will contact you</h4>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+
+    <button type="submit" class="btn" onclick="closeForm()" >Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+      document.getElementById("overlay").style.display = "block";  // Show overlay
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+      document.getElementById("overlay").style.display = "none";  // Hide overlay
+    }
+    </script>
   
 </body>
 </html>

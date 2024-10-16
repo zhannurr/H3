@@ -104,9 +104,10 @@ html {
     font-size: 24px;
     margin: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 5px solid #21571e;
+    color: #21571e;
     border-radius: 5px;
-    background-color: lightgray;
+    background-color: rgb(255, 212, 152);
     text-align: center;
 }
 

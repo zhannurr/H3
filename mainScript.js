@@ -65,7 +65,7 @@ document.getElementById("openFormButton").addEventListener("click", function() {
   function updateDateTime() {
     const now = new Date();
     const dateTimeString = now.toLocaleString(); // Получаем текущую дату и время в строковом формате
-    document.getElementById('date-time').textContent = 'Текущая дата и время: ' + dateTimeString; // Обновляем содержимое элемента
+    document.getElementById('date-time').textContent = 'Time for starting your healthy lifestyle: ' + dateTimeString; // Обновляем содержимое элемента
 }
 
 updateDateTime(); // Вызываем функцию для обновления даты и времени

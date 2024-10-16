@@ -202,3 +202,20 @@ html{
     width: 100%;
     bottom: 0;
 }
+#bgcolor{
+    margin-top: -10px !important;
+    margin-bottom: 30px !important;
+    background-color:  rgb(11, 114, 114) !important;
+    margin: auto;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    width: 600px !important;
+    height: 80px !important;
+}
+#bgcolor:hover {
+    background-color: rgb(4, 163, 163) !important;
+}
