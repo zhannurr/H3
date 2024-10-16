@@ -13,9 +13,9 @@
 
     <header class="header">
         <img src="img/logo.svg" alt="logo" class="logo">
-        <nav class="navbar" style="padding: 0;">
+        <nav class="navbar">
             <div class="container-fluid">
-                <ul class="nav_links navbar-nav d-flex flex-row"> 
+                <ul class="nav_links navbar-nav flex-row"> 
                     <li class="nav-item">
                         <a class="nav-link" href="mainpage.html">HOME</a>
                     </li>
@@ -42,7 +42,7 @@
         
         
         <section class="cards_section" id="fitness1">
-            <div class="container">
+            <div class="container" id="cards">
                 <div class="row justify-content-center">
                     <div class="col-md-4 mb-4">
                         <div class="card h-100 shadow-sm">
@@ -172,11 +172,18 @@
 
 
     <footer class="footer">
+        <button onclick="changeBackgroundColor()">Изменить цвет фона</button>
+
         <p>
           &copy; 2024 Helathy Habits Hub. Created by [Zhannur Zhaksybek].
         </p>
         <p>SE - 2323</p>
       </footer>
-  
+      <<script>
+        function changeBackgroundColor() {
+            const section = document.getElementById("cards");
+            section.style.backgroundColor = section.style.backgroundColor === "lightblue" ? "lightgray" : "lightblue"; // Сменяет цвет между светло-синим и светло-серым
+        }
+    </script> 
 </body>
 </html>

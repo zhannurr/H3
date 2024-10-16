@@ -10,11 +10,13 @@
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    
+
     <header class="header">
         <img src="img/logo.svg" alt="logo" class="logo">
-        <nav class="navbar" style="padding: 0;">
+        <nav class="navbar">
             <div class="container-fluid">
-                <ul class="nav_links navbar-nav d-flex flex-row"> 
+                <ul class="nav_links navbar-nav flex-row"> 
                     <li class="nav-item">
                         <a class="nav-link activ" href="mainpage.html">HOME</a>
                     </li>
@@ -39,8 +41,11 @@
             <p>Welcome to Healthy Habits Hub, your guide to living a healthy and balanced life! Whether you're just beginning your wellness journey or looking to refine your current routine, we’re here to help.</p>
         </div>
 
+
+        <div id="date-time">Текущая дата и время: </div>
+
         <section class="citation">
-            <div class="container_citation"  id="features_part">
+            <div class="container_citation">
                 <img src="img/stanford.png" alt="Stanford" class="citation_image">
                     <blockquote class="citation_text">
                         <p class="citation_words">
@@ -53,7 +58,7 @@
 
 
     <section class="carousel">
-        <div id="demo" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div id="demo" class="carousel slide mb-5">
         
         <div class="carousel-inner">
         <div class="carousel-item active">
@@ -79,7 +84,7 @@
 
 
 
-    <section class="feature_section">
+    <section class="feature_section" id="features_part">
             <h2 style="text-align: center; font-size: 30px; font-weight: bold;">What You’ll Find:</h2>
             <div class="feature_container">
                 <div class="feature">
@@ -107,35 +112,122 @@
         </section>
 
 
+        <section class="section_FAQ">
+            <h2 class="title_faq">FAQs</h2>
+            <div class="faq">
+                <div class="question">
+
+                    <h3>What kind of recipes can I find on your website?</h3>
+
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path 
+                            d="M3 3L21 21L39 3" 
+                            stroke="white" 
+                            stroke-width="7" 
+                            stroke-linecap="round" 
+                            fill="none"
+                        />
+                    </svg>
+
+                </div>
+
+                <div class="answer">
+                    <p>
+                        Our website offers healthy recipes for various diets, including vegetarian meals, low-sugar and low-fat dishes, and healthy snack ideas.                    </p>
+
+                </div>
+                
+            </div>
+
+
+
+            <div class="faq">
+                <div class="question">
+
+                    <h3>How often should I exercise to maintain good health?</h3>
+
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path 
+                            d="M3 3L21 21L39 3" 
+                            stroke="white" 
+                            stroke-width="7" 
+                            stroke-linecap="round" 
+                            fill="none"
+                        />
+                    </svg>
+
+                </div>
+
+                <div class="answer">
+                    <p>
+                        It’s recommended to engage in at least 150 minutes of moderate physical activity per week, such as walking, swimming, or yoga, to maintain good health.                    </p>
+
+                </div>
+                
+            </div>
+
+
+
+            <div class="faq">
+                <div class="question">
+
+                    <h3>What is a healthy lifestyle and why is it important?</h3>
+
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path 
+                            d="M3 3L21 21L39 3" 
+                            stroke="white" 
+                            stroke-width="7" 
+                            stroke-linecap="round" 
+                            fill="none"
+                        />
+                    </svg>
+                    
+
+                </div>
+
+                <div class="answer">
+                    <p>
+                         A healthy lifestyle includes proper nutrition, regular physical activity, and mental well-being. It helps improve overall health, maintain a healthy weight, and reduce the risk of diseases.
+                    </p>
+
+                </div>
+                
+            </div>
+            
+
+        </section>
+
+
 
         <section class="contact_us_form">
-            <div class="contact_us_container">
+            <div class="contact_us_container pt-3 pb-3">
                 <h2>Contact Us</h2>
                 <br>
-                <form class="form">
-                    <label for="fname">Full Name</label>
+                <form class="my_form" id="form">
+                    <label for="firstname">Full Name</label>
                     <br>
-                    <input type="text" name="firstname" placeholder="Your name..">
+                    <input type="text" class="input js-input" id="firstname" name="firstname" placeholder="Your name..">
                     <small>First Name</small>
-                            
-                    <input type="text" name="lastname" placeholder="Your last name..">
+                    <br>
+                    
+                    <input type="text" class="input js-input" id="lastname" name="lastname" placeholder="Your last name..">
                     <small>Last Name</small>
                     <br>
+                
                     <label for="email">Email</label>
                     <br>
-                    <input type="email" name="email" placeholder="Your email...">
+                    <input type="email" class="input js-input js-input-email" id="email" name="email" placeholder="Your email...">
                     <small>Email</small>
-    
                     <br>
-                    <label for="subject">Message</label>
-                    <br>
-                    <textarea id="subject" name="subject" placeholder="Write yiur message..." style="height:200px"></textarea>
-                    
-                    <br>
-    
-                    <input type="submit" value="Submit">
                 
-                  </form>
+                    <label for="message">Message</label> <!-- Updated id to match script -->
+                    <br>
+                    <textarea id="message" name="message" placeholder="Write your message..." style="height:200px"></textarea>
+                    <br>
+                
+                    <input type="submit" class="input js-input" value="Submit">
+                </form>
             </div>
           
         </section>
@@ -143,10 +235,30 @@
 
 
     <footer class="footer">
+
+        <!-- Кнопка для показа формы -->
+        <button id="openFormButton">Подписаться на новости</button>
+
+        <!-- Всплывающая форма -->
+        <div id="popupForm" class="form-popup">
+        <form class="form-container">
+            <h2>Подпишитесь на нашу рассылку</h2>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Введите ваш Email" name="email" required>
+
+            <button type="submit" class="btn">Отправить</button>
+            <button type="button" class="btn cancel" id="closeFormButton">Закрыть</button>
+        </form>
+        </div>
+
         <p>
           &copy; 2024 Helathy Habits Hub. Created by [Zhannur Zhaksybek].
         </p>
-        <p>SE - 2323</p>
-      </footer>
+        <p>
+            SE - 2323
+        </p>
+    </footer>
+<script src="mainScript.js"></script>
 </body>
 </html>
