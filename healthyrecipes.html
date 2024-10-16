@@ -203,11 +203,19 @@
       document.getElementById("overlay").style.display = "block";  // Show overlay
     }
     
+    
     function closeForm() {
       document.getElementById("myForm").style.display = "none";
       document.getElementById("overlay").style.display = "none";  // Hide overlay
     }
-    </script>
+    function validateAndCloseForm() {
+      let email = document.getElementsByName("email")[0].value;
+      let name = document.getElementsByName("name")[0].value;        
+      if (email === "" || name === "") {
+          closeForm();  // Close the form if both fields are empty
+      }
+    }
+</script>
   
 </body>
 </html>

@@ -49,16 +49,6 @@ faqs.forEach((faq) => {
 
 
 
-// Показать форму
-document.getElementById("openFormButton").addEventListener("click", function() {
-    document.getElementById("popupForm").style.display = "block";
-  });
-  
-  // Скрыть форму
-  document.getElementById("closeFormButton").addEventListener("click", function() {
-    document.getElementById("popupForm").style.display = "none";
-  });
-  
 
 
 
