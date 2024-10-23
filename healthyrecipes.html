@@ -16,13 +16,13 @@
             <div class="container-fluid">
                 <ul class="nav_links navbar-nav flex-row"> 
                     <li class="nav-item">
-                        <a class="nav-link " href="mainpage.html">HOME</a>
+                        <a class="nav-link" href="mainpage.html" tabindex="0">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link activ" href="healthyrecipes.html">HEALTHY RECIPES</a>
+                        <a class="nav-link activ" href="healthyrecipes.html" tabindex="0">HEALTHY RECIPES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="fitness routines.html">FITNESS ROUTINES</a>
+                        <a class="nav-link" href="fitness routines.html" tabindex="0">FITNESS ROUTINES</a>
                     </li>
                 </ul>
                 <a href="#features_part" class="btn">SEARCH</a>
@@ -31,6 +31,7 @@
     </header>
 
     <main>
+        <audio id="btn-sound" src="coinsound.wav"></audio>
         <section class="welcome">
             <div class="container">
                 <h1 class="welcome_title">Delicious & Nutritious Recipes</h1>
@@ -167,7 +168,10 @@
                 </div>
             </div>
         </section>
-        <button class="btn" id="bgcolor" onclick="changeBackgroundColor()">Изменить цвет фона</button>
+
+
+        
+        <button class="btn" id="bgcolor" onclick="changeBackgroundColor()">Change background color</button>
 
     </main>
 
@@ -176,8 +180,9 @@
           &copy; 2024 Helathy Habits Hub. Created by [Zhannur Zhaksybek].
         </p>
         <p>SE - 2323</p>
-      </footer>
-      <script src="healthyrecipesScript.js"></script>
+    </footer>
+    
+    <script src="healthyrecipesScript.js"></script>
 
       
 <button class="open-button" onclick="openForm()">Contact Us</button>
@@ -212,7 +217,7 @@
       let email = document.getElementsByName("email")[0].value;
       let name = document.getElementsByName("name")[0].value;        
       if (email === "" || name === "") {
-          closeForm();  // Close the form if both fields are empty
+          closeForm();  
       }
     }
 </script>

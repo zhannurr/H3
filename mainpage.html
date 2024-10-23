@@ -18,15 +18,16 @@
             <div class="container-fluid">
                 <ul class="nav_links navbar-nav flex-row"> 
                     <li class="nav-item">
-                        <a class="nav-link activ" href="mainpage.html">HOME</a>
+                        <a class="nav-link activ" href="mainpage.html" tabindex="0">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="healthyrecipes.html">HEALTHY RECIPES</a>
+                        <a class="nav-link" href="healthyrecipes.html" tabindex="0">HEALTHY RECIPES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="fitness routines.html">FITNESS ROUTINES</a>
+                        <a class="nav-link" href="fitness routines.html" tabindex="0">FITNESS ROUTINES</a>
                     </li>
                 </ul>
+                
                 <a href="#features_part" class="btn">SEARCH</a>
             </div>
         </nav>
@@ -41,8 +42,7 @@
             <p>Welcome to Healthy Habits Hub, your guide to living a healthy and balanced life! Whether you're just beginning your wellness journey or looking to refine your current routine, we’re here to help.</p>
         </div>
 
-
-        <div id="date-time">Текущая дата и время: </div>
+        <div id="date-time"></div>
 
         <section class="citation">
             <div class="container_citation">
@@ -82,10 +82,21 @@
         </div>
     </section>
 
+    <section class="weather_section">
+        <button class="btn" id="getWeatherBtn" style="width: 500px !important; margin-left: auto; margin-right: auto;">weather in Astana for workout outside</button>
+        <div id="weather"></div>
+        
+    </section>
+
+
+    
+  
+
+
 
 
     <section class="feature_section" id="features_part">
-            <h2 style="text-align: center; font-size: 30px; font-weight: bold;">What You’ll Find:</h2>
+            <h2 id="feature_part">What You’ll Find:</h2>
             <div class="feature_container">
                 <div class="feature">
                     <img src="img/salad.png">
@@ -128,15 +139,13 @@
                             fill="none"
                         />
                     </svg>
-
                 </div>
 
                 <div class="answer">
                     <p>
-                        Our website offers healthy recipes for various diets, including vegetarian meals, low-sugar and low-fat dishes, and healthy snack ideas.                    </p>
-
+                        Our website offers healthy recipes for various diets, including vegetarian meals, low-sugar and low-fat dishes, and healthy snack ideas.                    
+                    </p>
                 </div>
-                
             </div>
 
 
@@ -160,8 +169,8 @@
 
                 <div class="answer">
                     <p>
-                        It’s recommended to engage in at least 150 minutes of moderate physical activity per week, such as walking, swimming, or yoga, to maintain good health.                    </p>
-
+                        It’s recommended to engage in at least 150 minutes of moderate physical activity per week, such as walking, swimming, or yoga, to maintain good health.                    
+                    </p>
                 </div>
                 
             </div>
@@ -182,6 +191,15 @@
                             fill="none"
                         />
                     </svg>
+
+                    <script>
+                    const faqs = document.querySelectorAll(".faq");
+                        faqs.forEach((faq) => {
+                            faq.addEventListener("click", () => {
+                                faq.classList.toggle("active");
+                            });
+                        });
+                    </script>
                     
 
                 </div>
@@ -190,9 +208,7 @@
                     <p>
                          A healthy lifestyle includes proper nutrition, regular physical activity, and mental well-being. It helps improve overall health, maintain a healthy weight, and reduce the risk of diseases.
                     </p>
-
                 </div>
-                
             </div>
             
 
@@ -234,7 +250,7 @@
     </main>
 
 
-    <footer class="footer">
+    <footer class="footer" id ="footer">
         <p>
           &copy; 2024 Helathy Habits Hub. Created by [Zhannur Zhaksybek].
         </p>
@@ -242,6 +258,8 @@
             SE - 2323
         </p>
     </footer>
+
+    <audio id="btn-sound" src="coinsound.wav"></audio>
 <script src="mainScript.js"></script>
 </body>
 </html>

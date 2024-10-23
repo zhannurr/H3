@@ -147,6 +147,17 @@ html {
 
 
 
+.weather_section #weather{
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: rgb(255, 231, 176);
+    padding: 50px;
+}
+.weather_section h1{
+    text-align: center;
+}
+
+
 
 .feature {
     display: flex;
@@ -242,7 +253,6 @@ html {
 .faq.active .answer{
     max-height: 300px;
     animation: fade 1s ease-in-out;
-
 }
 
 .faq.active svg{
@@ -314,7 +324,7 @@ small {
 
 
 .footer {
-    background-color:#FFC16C;
+    /* background-color:#FFC16C; */
     color: white;
     text-align: center;
     
