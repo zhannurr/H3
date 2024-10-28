@@ -6,7 +6,7 @@
 }
 body{
     background-color:  rgb(255,247,236);
-    background:linear-gradient(to right,#e2e2e2,#c9d6ff);
+    background:linear-gradient(to right,#e8e6cb,#ffd084);
 }
 .container{
     background:rgb(255,247,236);
@@ -14,7 +14,7 @@ body{
     padding:1.5rem;
     margin:50px auto;
     border-radius:10px;
-    box-shadow:0 20px 35px rgba(0,0,1,0.9);
+    box-shadow:0 20px 35px rgba(1, 30, 8, 0.9);
 }
 form{
     margin:0 2rem;
