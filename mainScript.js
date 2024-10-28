@@ -54,7 +54,6 @@ function validateForm(event) {
     
     const firstname = document.getElementById("firstname").value.trim();
     const lastname = document.getElementById("lastname").value.trim();
-    const email = document.getElementById("email").value.trim();
     const message = document.getElementById("message").value.trim();
 
     let errorMessage = "";
@@ -77,9 +76,22 @@ function validateForm(event) {
     if (errorMessage !== "") {
         alert(errorMessage);
     } else {
+        // Get the current hour
+        const currentHour = new Date().getHours();
+        let greeting = "";
+
+        // Determine the greeting based on the time of day
+        if (currentHour < 12) {
+            greeting = "Good morning";
+        } else if (currentHour < 18) {
+            greeting = "Good afternoon";
+        } else {
+            greeting = "Good evening";
+        }
+
         alert("Form submitted successfully!");
+        alert(greeting + ", " + firstname + "!");
     }
-    alert("welcome " + firstname +"!");
 }
 
 
@@ -165,31 +177,4 @@ getWeatherBtn.addEventListener('click', getWeather);
 
 
 
-// const weatherDiv = document.getElementById('weather');
-  
-//       // Функция для получения данных о погоде
-//       function getWeather() {
-//         const apiKey = '8a641813331a93541243c8b37afc51ad'; 
-//         const city = 'Astana';  
-//         const url = `https://api.openweathermap.org/data/2.5/weather?id=1526273&appid=8a641813331a93541243c8b37afc51ad&units=metric&lang=eng`;
-  
-//         fetch(url)
-//           .then(response => response.json())
-//           .then(data => {
-//             const temp = data.main.temp;  // Температура
-//             const weatherDescription = data.weather[0].description;  // Описание погоды
-            
-//             weatherDiv.innerHTML = `
-//               <p>City: ${city}</p>
-//               <p>Temperature: ${temp}°C</p>
-//               <p>Weather: ${weatherDescription}</p>
-//             `;
-//           })
-//           .catch(error => {
-//             weatherDiv.innerHTML = 'Ошибка при загрузке данных о погоде';
-//             console.error('Ошибка:', error);
-//           });
-//       }
-  
-//       // Вызов функции для получения данных о погоде
-//       getWeatherBtn.addEventListener('click', getWeather);
+document.getElemen
