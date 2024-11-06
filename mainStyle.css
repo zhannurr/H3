@@ -337,3 +337,92 @@ small {
     bottom: 0;
 }
 
+
+
+/* Dark theme */
+.dark-theme {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+.dark-theme header {
+    background-color: #222;
+    color: #FFD700;
+}
+
+.dark-theme nav a {
+    color: #FFD700;
+}
+
+.dark-theme nav a:hover {
+    background-color: #FFD700;
+    color: #222;
+}
+
+
+.dark-theme .btn {
+    background-color: #4CAF50 !important;
+    color: white !important;
+}
+
+.dark-theme .btn:hover {
+    background-color: #45a049 !important;
+}
+
+
+.dark-theme .welcome_text {
+    color: #FFD700;
+}
+
+.dark-theme .citation_text {
+    color: #FFD700;
+}
+
+.dark-theme #date-time {
+    background-color: #444;
+    color: #FFD700;
+    border-color: #FFD700;
+}
+
+.dark-theme .feature {
+    background-color: #444;
+    color: #f5f5f5;
+}
+
+.dark-theme .feature:hover {
+    transform: scale(1.05);
+}
+
+.dark-theme .faq {
+    border-bottom: 2px solid #FFD700;
+}
+
+.dark-theme .question h3 {
+    color: #FFD700;
+}
+
+.dark-theme .answer p {
+    color: #f5f5f5;
+}
+
+.dark-theme .contact_us_form {
+    background-color: #555;
+}
+
+.dark-theme input[type=text], 
+.dark-theme input[type=email], 
+.dark-theme select, 
+.dark-theme textarea {
+    background-color: #444;
+    color: #f5f5f5;
+    border-color: #555;
+}
+
+.dark-theme input[type=submit] {
+    background-color: #FFD700;
+    color: #222;
+}
+
+.dark-theme input[type=submit]:hover {
+    background-color: #ffcc00;
+}

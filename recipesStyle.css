@@ -110,6 +110,38 @@ html {
     margin: 40px 0px;
     font-size: 24px;
 }
+
+
+.button-group{
+    margin-top: 40px;
+    text-align: center;
+  }
+  .button-group .button{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #c8d1d8;
+    color: var(--primary-clr);
+    font-style: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+  }
+  .button-group .button.active{
+    background-color: var(--primary-clr);
+    color: var(--body-clr);
+  }
+  .button-group .button:hover{
+    background-color: var(--primary-clr);
+    color: var(--body-clr);
+  }
+
+
 .cards_section {
     padding: 60px 0;
 }

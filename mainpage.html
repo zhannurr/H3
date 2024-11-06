@@ -251,6 +251,9 @@
 
 
     <footer class="footer" id ="footer">
+        <footer>
+            <button id="themeToggle" class="btn btn-primary"></button>
+        </footer>
         <p>
           &copy; 2024 Helathy Habits Hub. Created by [Zhannur Zhaksybek].
         </p>
@@ -258,6 +261,31 @@
             SE - 2323
         </p>
     </footer>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        const toggleButton = document.getElementById('themeToggle');  
+        const currentTheme = localStorage.getItem('theme');
+    
+        // загрузкадағы тема
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-theme');
+            toggleButton.textContent = 'Light theme';
+        } else {
+            toggleButton.textContent = 'Dark theme';
+        }
+        // өзгергенде
+        toggleButton.addEventListener('click', function() {
+            document.body.classList.toggle('dark-theme');
+    
+            if (document.body.classList.contains('dark-theme')) {
+                localStorage.setItem('theme', 'dark');
+                toggleButton.textContent = 'Light theme';
+            } else {
+                localStorage.setItem('theme', 'light');
+                toggleButton.textContent = 'Dark theme';
+            }
+        });
+     });
+     </script>
 
     <audio id="btn-sound" src="coinsound.wav"></audio>
 <script src="mainScript.js"></script>
