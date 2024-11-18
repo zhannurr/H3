@@ -14,24 +14,33 @@ h1,h2,h3,h4,h5,h6{
     height: 50px;
 
 }
-html {
-    scroll-behavior: smooth;
+html{
+    scroll-behavior:smooth;
 }
+
+
 
 
 
 
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 40px;
-    position: relative;
+    display: flex !important;
+    justify-content: space-around !important;
+    /* align-items: center; */
+    padding: 0px 40px;
+    margin-top: 20px;
+    margin-bottom: -80px;
+    position: relative !important;
+
 }
 
 .nav_links {
-    display: flex; 
+    display: flex !important; 
+    justify-content:flex-start !important;
+    position: relative !important;
+
+
     gap: 30px; 
     list-style: none; 
 }
@@ -58,6 +67,8 @@ html {
 
 
 
+
+
 .btn {
     display: flex !important;
     align-items: center !important;
@@ -78,3 +89,16 @@ html {
     background-color: green;
 }
 
+.footer {
+    background-color:#FFC16C;
+    color: white;
+    text-align: center;
+    
+
+
+    padding: 5px;
+    margin-top: 80px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}

@@ -318,3 +318,14 @@ html {
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
   }
+
+
+
+
+  .dark-theme body {
+    background-color: #515151 !important;
+
+  }
+  .dark-theme .btn{
+    background-color: #515151 !important;
+  }

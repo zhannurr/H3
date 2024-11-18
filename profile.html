@@ -23,7 +23,7 @@
             <a class="nav-link" href="healthyrecipes.html" tabindex="0">HEALTHY RECIPES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="fitnessroutines.html" tabindex="0">FITNESS ROUTINES</a>
+            <a class="nav-link" href="fitness routines.html" tabindex="0">FITNESS ROUTINES</a>
           </li>
         </ul>
         <a href="login.html" class="btn" id="SEARCH">LOG OUT</a>
@@ -31,7 +31,7 @@
     </nav>
   </header>
 
-  <main class="pt-5" style="background-image: url(background/profile.jpg); background-repeat: no-repeat; background-size: cover;">
+  <main class="pt-5">
     <div class="profile-container" id="profile-container">
       <section class="h-100">
         <div class="container py-5 h-100">
@@ -40,9 +40,9 @@
               <div class="card border-0" style="border-radius: 50px;">
                 <div class="text-white d-flex flex-row" style="background: linear-gradient(to right, rgb(51, 77, 51), rgb(110, 139, 73)); height: 250px; border-top-left-radius: 50px; border-top-right-radius: 50px;">
                   <div class="m-5 d-flex flex-column" style="width: 200px;">
-                    <img id="profilePicture" src="icons/no_photo.jpg" alt="Profile picture" class="img-fluid img-thumbnail mt-4 mb-2" style="width: 300px; z-index: 1; border-radius: 70px; border-color: lightgray;">
+                    <img id="profilePicture" src="img/women.png" alt="Profile picture" class="img-fluid img-thumbnail mt-4 mb-2" style="width: 300px; z-index: 1; border-radius: 70px; border-color: lightgray;">
                     <input type="file" id="uploadPicture" accept="image/*" style="display: none;" onchange="changeProfilePicture(event)">
-                    <button onclick="document.getElementById('uploadPicture').click()" class="btn text-body" style="z-index: 1; background-color: blanchedalmond; font-weight: bolder; box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.153);">Upload New Photo</button>
+                    <button onclick="document.getElementById('uploadPicture').click()" class="btn">Upload New Photo</button>
                   </div>
                   <div class="ms-3" style="margin-top: 130px;">
                     <h1 style="font-size: 50px;"><span id="name1"></span> <span id="surname1"></span></h1>
@@ -52,8 +52,8 @@
 
                 <div class="card-body p-4 text-black">
                   <form>
-                    <h6 class="heading-small text-muted mb-4">Personal Information</h6>
-                    <div class="pl-lg-4">
+                    
+                    <div class="pl-lg-4 mt-5">
                       <div class="row">
                         <div class="col-lg-6">
                           <div class="form-group">
@@ -90,7 +90,7 @@
                       </div>
                     </div>
                     <div style="display: flex; justify-content: center;" id="button" onclick="return saveProfileData();">
-                      <button type="button" class="btn text-body" style="z-index: 1; background-color: blanchedalmond; font-weight: bolder; box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.153);">Commit Changes</button>
+                      <button type="button" class="btn" ">Commit Changes</button>
                     </div>
                   </form>
                 </div>
@@ -102,14 +102,17 @@
     </div>
   </main>
 
-  <footer id="Contacts" class="text-white text-center py-5" style="background-color:#115a47 !important;">
-    <div class="container">
-      <p class="mb-2 font-weight-bold" style="font-size: 1.2rem;">Stay healthy and stay happy!</p>
-      <hr style="width: 80%; border-top: 1px solid #fff; opacity: 0.2;">
-      <p class="mt-4 mb-1" style="font-size: 1rem;">&copy; 2024 Healthy Habits. Designed by <span style="font-weight: bold;">Zhalgassova Aida</span></p>
-      <p class="mb-3">Group: <span style="font-weight: bold;">SE-2307</span></p>
-    </div>
-  </footer>
+  <footer class="footer" id ="footer">
+    <!-- <footer>
+        <button id="themeToggle" class="btn btn-primary"></button>
+    </footer> -->
+    <p>
+      &copy; 2024 Helathy Habits Hub. Created by [Zhannur Zhaksybek].
+    </p>
+    <p>
+        SE - 2323
+    </p>
+</footer>
 
   <script>
     let profileImageBase64 = '';

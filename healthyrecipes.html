@@ -25,7 +25,7 @@
                         <a class="nav-link" href="fitness routines.html" tabindex="0">FITNESS ROUTINES</a>
                     </li>
                 </ul>
-                <a href="#features_part" class="btn">USER PAGE</a>
+                <a href="profile.html" class="btn">USER PAGE</a>
             </div>
         </nav>
     </header>
@@ -255,6 +255,31 @@
       }
     }
 </script>
+<script>document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('themeToggle');  
+    const currentTheme = localStorage.getItem('theme');
+
+    // загрузкадағы тема
+    if (currentTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+        toggleButton.textContent = 'Light theme';
+    } else {
+        toggleButton.textContent = 'Dark theme';
+    }
+    // өзгергенде
+    toggleButton.addEventListener('click', function() {
+        document.body.classList.toggle('dark-theme');
+
+        if (document.body.classList.contains('dark-theme')) {
+            localStorage.setItem('theme', 'dark');
+            toggleButton.textContent = 'Light theme';
+        } else {
+            localStorage.setItem('theme', 'light');
+            toggleButton.textContent = 'Dark theme';
+        }
+    });
+ });
+ </script>
   
 </body>
 </html>
