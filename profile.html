@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="text-white py-3 shadow-lg position-absolute w-100 fixed-top"
+    style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.559), rgba(0, 0, 0, 0.23));">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="logo font-weight-bold h4 mb-0">Touro</div>
+        <nav class="d-flex justify-content-center">
+          <ul class="nav">
+            <li class="nav-item mx-2"><a class="nav-link text-white" href="home.html">Home</a></li>
+            <li class="nav-item mx-2"><a class="nav-link text-white" href="tours.html">Tours</a></li>
+            <li class="nav-item mx-2"><a class="nav-link text-white" href="#about">About Us</a></li>
+            <li class="nav-item mx-2"><a class="nav-link text-white" href="#features">Features</a></li>
+            <li class="nav-item mx-2"><a class="nav-link text-white" href="#tours">Our Bestsellers</a></li>
+            <li class="nav-item mx-2"><a class="nav-link text-white" href="#offers">Special Offers</a></li>
+            <li class="nav-item mx-2"><a class="nav-link text-white" href="#Contacts">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div class="d-flex align-items-center">
+          <a href="#"><img class="ml-2" src="icons/facebook.png" width="20" height="20"></a>
+          <a href="#"><img class="ml-2" src="icons/vkontakte.png" width="20" height="20"></a>
+          <a href="#"><img class="ml-2" src="icons/instagram.png" width="20" height="20"></a>
+
+          <a href="home.html" class="btn font-weight-bold ml-3 rounded p-2 px-3 text-dark"
+            style="background-color:blanchedalmond;">Log Out</a>
+
+          <div class="ml-3">
+            <a href="#" class="text-white">Kz</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="pt-5"
+    style="background-image: url(background/profile.jpg);background-repeat: no-repeat;background-size: cover;">
+    <div class="profile-container" id="profile-container">
+      <section class="h-100">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-12">
+              <div class="card border-0" style="border-radius: 50px;">
+                <div class="text-white d-flex flex-row" style="background: linear-gradient(to right, rgb(51, 77, 51), rgb(110, 139, 73)); height: 250px; border-top-left-radius: 50px; border-top-right-radius: 50px;">
+                  <div class="m-5 d-flex flex-column" style="width: 200px;">
+                    <img id="profilePicture" src="icons/no_photo.jpg" alt="Profile picture" class="img-fluid img-thumbnail mt-4 mb-2" style="width: 300px; z-index: 1; border-radius: 70px; border-color: lightgray;">
+                    <input type="file" id="uploadPicture" accept="image/*" style="display: none;" onchange="changeProfilePicture(event)">
+                    <button onclick="document.getElementById('uploadPicture').click()" class="btn text-body" style="z-index: 1; background-color: blanchedalmond; font-weight: bolder; box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.153);">Upload New Photo</button>
+                </div>
+                  <div class="ms-3" style="margin-top: 130px;">
+                    <h1 style="font-size: 50px;"><span id="name1"></span>
+                      <span id="surname1"></span>
+                    </h1>
+                    <h5>Traveler & Adventure Seeker</h5>
+                  </div>
+                </div>
+                <div class="p-4 text-black bg-body-tertiary">
+                  <div class="d-flex justify-content-end text-center py-1">
+                    <div> <p class="mb-1 h3">5</p><p class="text-muted mb-0">Countries Visited</p>
+                    </div>
+                    <div class="px-3"> <p class="mb-1 h3">3</p><p class="text-muted mb-0">Tours Booked</p>
+                    </div>
+                    <div><p class="mb-1 h3">15</p><p class="text-muted mb-0"><a href="#!" class="text-muted">Wishlist Tours</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body p-4 text-black">
+                  <form>
+                    <h6 class="heading-small text-muted mb-4">User information</h6>
+                    <div class="pl-lg-4">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="username">Username</label>
+                            <input id="username" class="form-control form-control-alternative" placeholder="Username">
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="email">Email address</label>
+                            <input id="email" class="form-control form-control-alternative" placeholder="your email">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="name">First name</label>
+                            <input id="name" class="form-control form-control-alternative" placeholder="First name">
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="surname">Last name</label>
+                            <input id="surname" class="form-control form-control-alternative" placeholder="Last name">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-4">
+                    <h6 class="heading-small text-muted mb-4">Contact information</h6>
+                    <div class="pl-lg-4">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label class="form-control-label" for="address">Address</label>
+                            <input id="address" class="form-control form-control-alternative" placeholder="Home Address">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <div class="form-group">
+                            <label class="form-control-label" for="city">City</label>
+                            <input id="city" class="form-control form-control-alternative" placeholder="City">
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="form-group">
+                            <label class="form-control-label" for="country">Country</label>
+                            <input id="country" class="form-control" placeholder="Country">
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="form-group">
+                            <label class="form-control-label" for="phone">Phone</label>
+                            <input id="phone" class="form-control " placeholder="Phone">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-4">
+                    <h6 class="heading-small text-muted mb-4">About me</h6>
+                    <div class="pl-lg-4">
+                      <div class="form-group">
+                        <label for="aboutMe">About Me</label>
+                        <textarea id="aboutMe" rows="4" class="form-control form-control-alternative" placeholder="A few words about you ..."></textarea>
+                      </div>
+                    </div>
+                  </form>
+                  <div style="display: flex; justify-content: center;" id="button" onclick="return saveProfileData();">
+                    <button type="button" class="btn text-body" style="z-index: 1; background-color: blanchedalmond; font-weight: bolder; box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.153);">Commit changes</button>
+                  </div>
+                  <div class="mb-5">
+                    <p class="lead fw-normal mb-0">Countries Visited</p>
+                    <div class="row g-2 mt-3">
+                      <div class="col-md-3 mb-2">
+                        <img src="tours/Italy1.jpg" alt="Italy" class="w-100 rounded-3" style="border-radius: 15px;">
+                        <p style="text-align: center; font-weight: normal;">Italy</p>
+                      </div>
+                      <div class="col-md-3 mb-2">
+                        <img src="tours/Gruzia1.jpeg" class="w-100 rounded-3" style="border-radius: 15px;">
+                        <p style="text-align: center;  font-weight: normal;">Georgia</p>
+                      </div>
+                      <div class="col-md-3 mb-2">
+                        <img src="tours/Egypt2.jpg" alt="Egypt" class="w-100 rounded-3" style="border-radius: 15px;">
+                        <p style="text-align: center;  font-weight: normal;">Egypt</p>
+                      </div>
+                      <div class="col-md-3 mb-2">
+                        <img src="tours/Thailand1.jpg" alt="Thailand" class="w-100 rounded-3"
+                          style="border-radius: 15px;">
+                        <p style="text-align: center;  font-weight:normal;">Thailand</p>
+                      </div>
+                    </div>
+                    <p class="mt-3" id="country-info" class="text-muted"></p>
+                  </div>
+                  <div>
+                    <p class="lead fw-normal mb-0">Tours Booked</p>
+                    <div class="p-4 bg-light rounded-3">
+                      <ul>
+                        <li>Rome City Tour</li>
+                        <li>Tokyo Explorer</li>
+                        <li>Paris Highlights</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="Contacts" class="text-white text-center py-5" style="background-color:#115a47 !important;">
+    <div class="container"> <p class="mb-2 font-weight-bold" style="font-size: 1.2rem;"> Feel free to write, call, and visit us. We love connecting with our clients! </p>
+      <hr style="width: 80%; border-top: 1px solid #fff; opacity: 0.2;">
+      <p class="mt-4 mb-1" style="font-size: 1rem;">&copy; 2024 Touro. Designed by <span style="font-weight: bold;">Zhalgassova Aida (231408)</span></p>
+      <p class="mb-3">Group: <span style="font-weight: bold;">SE-2307</span></p>
+
+      <div class="social-icons d-flex justify-content-center">
+        <a href="#" class="mx-3"><img src="icons/facebook.png" width="20" height="20" alt="Facebook"></a>
+        <a href="#" class="mx-3"><img src="icons/vkontakte.png" width="20" height="20" alt="Vkontakte"></a>
+        <a href="#" class="mx-3"><img src="icons/instagram.png" width="20" height="20" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let profileImageBase64 = '';
+    function changeProfilePicture(event) {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        profileImageBase64 = e.target.result;
+        document.getElementById('profilePicture').src = profileImageBase64;
+      };
+      if (file) {
+        reader.readAsDataURL(file);
+      }
+    }
+    function loadUserData() {
+      const loggedInUserEmail = localStorage.getItem('loggedInUser');
+      if (loggedInUserEmail) {
+        const savedDatas = JSON.parse(localStorage.getItem('usersData')) || [];
+        const user = savedDatas.find(user => user.email === loggedInUserEmail);
+        if (user) {
+          document.getElementById('name1').innerText = user.firstName;
+          document.getElementById('surname1').innerText = user.lastName;
+          document.getElementById('name').value = user.firstName;
+          document.getElementById('surname').value = user.lastName;
+          document.getElementById('username').value = user.userName;
+          document.getElementById('email').value = user.email;
+          document.getElementById('country').value = user.country;
+          document.getElementById('city').value = user.city;
+          document.getElementById('address').value = user.address;
+          document.getElementById('phone').value = user.phone;
+          const profilePictureElement = document.getElementById('profilePicture');
+          if (profilePictureElement && user.profilePicture) {
+            profilePictureElement.src = user.profilePicture;
+          }
+        } else {
+          console.error('User not found');
+          window.location.href = 'login.html';
+        }
+      } else {
+        window.location.href = 'login.html';
+      }
+    }
+    document.getElementById('button').addEventListener('click', function saveProfileData(event) {
+      event.preventDefault();
+      const updatedData = {
+        userName: document.getElementById('username').value,
+        email: document.getElementById('email').value,
+        firstName: document.getElementById('name').value,
+        lastName: document.getElementById('surname').value,
+        country: document.getElementById('country').value,
+        city: document.getElementById('city').value,
+        address: document.getElementById('address').value,
+        phone: document.getElementById('phone').value,
+        aboutMe: document.getElementById('aboutMe').value,
+        profilePicture: profileImageBase64
+      };
+      const savedDatas = JSON.parse(localStorage.getItem('usersData')) || [];
+      const userIndex = savedDatas.findIndex(user => user.email === updatedData.email);
+
+      if (userIndex !== -1) {
+        savedDatas[userIndex] = { ...savedDatas[userIndex], ...updatedData };
+        localStorage.setItem('usersData', JSON.stringify(savedDatas));
+        alert('Profile updated successfully!');
+      } else {
+        alert('User not found for updating!');
+      }
+    });
+    window.onload = loadUserData;
+  </script>
+</body>
+</html>
