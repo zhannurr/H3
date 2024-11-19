@@ -24,6 +24,8 @@ html{
 
 
 
+
+
 .header {
     display: flex !important;
     justify-content: space-around !important;
@@ -83,7 +85,7 @@ html{
     border-radius: 30px !important;
     font-weight: bold !important;
  
-}
+} 
 
 .btn:hover {
     background-color: green;
@@ -102,3 +104,27 @@ html{
     width: 100%;
     bottom: 0;
 }
+
+
+
+.custom-shadow-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  .custom-shadow-btn {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Начальная тень */
+  }
+  
+  .custom-shadow-btn:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Увеличенная тень */
+    transform: translateY(-3px); /* Подъем */
+  }
