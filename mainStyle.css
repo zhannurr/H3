@@ -150,7 +150,7 @@ html {
 .weather_section #weather{
     margin-top: 20px;
     font-size: 20px;
-    background-color: rgb(255, 231, 176);
+    padding-bottom: 50px !important;
     padding: 50px;
 }
 .weather_section h1{
@@ -165,11 +165,10 @@ html {
     justify-content: space-between;
     width: 370px;
     overflow: hidden;
+    padding-top: 30px !important;
     margin-left: 65px;
     margin-bottom: -65px;
-
-
-    
+    border-radius: 30px;
 }
 .feature:hover{
     transform: scale(1.05);
@@ -195,7 +194,6 @@ html {
 
 .feature_section h1{
     font-weight: bolder;
-    background-color: #04AA6D;
     font-size: 40px;
     text-transform: uppercase;
 }
@@ -248,6 +246,7 @@ html {
     padding-top: 1rem;
     line-height: 1.6;
     font-size: 1.4rem;
+    color: #306A02 !important;
 }
 
 .faq.active .answer{
@@ -393,6 +392,10 @@ small {
     color: #ffd700; /* Золотистый цвет */
     border-color: #ffd700; /* Золотая рамка */
 }
+
+.dark-theme .weather_section #weather{
+    background-color: rgb(86, 75, 50) !important;
+} 
 
 .dark-theme .feature {
     background-color: #3a3a3a; /* Темно-серый фон для карточек */
