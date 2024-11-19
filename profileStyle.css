@@ -128,3 +128,54 @@ html{
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Увеличенная тень */
     transform: translateY(-3px); /* Подъем */
   }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Темная тема */
+body.dark-theme {
+    background-color: #121212 !important;
+    color: #e0e0e0 !important; /* Светлый текст для темной темы */
+}
+
+.dark-theme .header {
+    background-color: #1c1c1c !important;
+}
+
+.dark-theme .nav_links a {
+    color: #A0B6A5; /* Светло-зеленый для ссылок в темной теме */
+}
+
+.dark-theme .nav_links a:hover {
+    color: #80a360; /* Немного более светлый цвет для ховера */
+}
+
+.dark-theme .footer {
+    background-color: #2c2c2c !important;
+    color: #ddd; /* Светлый цвет текста в футере */
+}
+
+.dark-theme .btn {
+    background-color: #4caf50 !important;
+}
+
+.dark-theme .btn:hover {
+    background-color: #66bb6a;
+}
+
+.dark-theme .custom-shadow-btn {
+    background-color: #388e3c;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Более темная тень для кнопки */
+}
+
+.dark-theme .custom-shadow-btn:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}

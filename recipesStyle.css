@@ -329,3 +329,116 @@ html {
   .dark-theme .btn{
     background-color: #515151 !important;
   }
+  .dark-theme body {
+    background-color: #2c2c2c !important;
+    color: white !important;
+}
+
+.dark-theme h1, 
+.dark-theme h2, 
+.dark-theme h3, 
+.dark-theme h4, 
+.dark-theme h5, 
+.dark-theme h6 {
+    color: white !important;
+}
+
+
+.dark-theme .header {
+    background-color: #333 !important;
+}
+
+.dark-theme .nav_links a {
+    color: #8ABE61 !important;
+}
+
+.dark-theme .nav_links a:hover {
+    color: #E6F4E5;
+}
+
+.dark-theme .btn {
+    background-color: #4B4B4B !important;
+    color: white !important;
+}
+
+.dark-theme .btn:hover {
+    background-color: #616161 !important;
+}
+
+.dark-theme .footer {
+    background-color: #333 !important;
+    color: white !important;
+}
+
+.dark-theme .welcome {
+    background-image: url(recipespageimages/helathypagemainphoto.jpg) !important;
+    background-color: #4B4B4B !important;
+}
+
+.dark-theme .welcome .container {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    color: white !important;
+}
+
+.dark-theme .card {
+    background-color: #444 !important;
+    color: white !important;
+}
+.dark-theme .card-text{
+    color: white !important;
+}
+
+.dark-theme .card-body {
+    background-color: #555 !important;
+
+
+}
+
+.dark-theme .card .btn {
+    background-color: #5F5F5F !important;
+}
+
+.dark-theme .card .btn:hover {
+    background-color: #707070 !important;
+}
+
+.dark-theme #bgcolor {
+    background-color: #333 !important;
+    color: white !important;
+}
+
+.dark-theme .form-container {
+    background-color: #333 !important;
+    color: white !important;
+}
+
+.dark-theme .form-container input[type=text], 
+.dark-theme .form-container input[type=password] {
+    background-color: #555 !important;
+    color: white !important;
+}
+
+.dark-theme .form-container .btn {
+    background-color: #4B4B4B !important;
+}
+
+.dark-theme .form-container .cancel {
+    background-color: red !important;
+}
+
+.dark-theme .open-button {
+    background-color: #333 !important;
+}
+
+.dark-theme .button-group .button {
+    background-color: #444 !important;
+    color: white !important;
+}
+
+.dark-theme .button-group .button:hover {
+    background-color: #5F5F5F !important;
+}
+
+.dark-theme .card:hover {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2) !important;
+}

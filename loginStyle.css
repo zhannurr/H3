@@ -135,3 +135,92 @@ button:hover{
     text-decoration:underline;
     color:darkgreen;
 } 
+
+
+.dark-theme h1, 
+.dark-theme h2, 
+.dark-theme h3, 
+.dark-theme h4, 
+.dark-theme h5, 
+.dark-theme h6 {
+    color: white !important;
+}
+
+.dark-theme .header {
+    background-color: #333 !important;
+}
+
+.dark-theme .nav_links a {
+    color: #8ABE61 !important;
+}
+
+.dark-theme .nav_links a:hover {
+    color: rgb(54, 64, 57);
+}
+
+.dark-theme .btn {
+    background-color: #515151 !important;
+    color: white !important;
+}
+
+.dark-theme .btn:hover {
+    background-color: #333 !important;
+}
+
+.dark-theme .card {
+    background-color: #444 !important;
+    color: white !important;
+}
+
+.dark-theme .card:hover {
+    background-color: #555 !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4) !important;
+}
+
+.dark-theme .footer {
+    background-color: #333 !important;
+    color: white !important;
+}
+
+.dark-theme .footer a {
+    color: white !important;
+}
+
+.dark-theme .form-container {
+    background-color: #444 !important;
+    color: white !important;
+}
+
+.dark-theme .form-container input[type="text"], 
+.dark-theme .form-container input[type="password"] {
+    background-color: #333 !important;
+    color: white !important;
+}
+
+.dark-theme .form-container .btn {
+    background-color: #04AA6D !important;
+    color: white !important;
+}
+
+.dark-theme .form-container .cancel {
+    background-color: red !important;
+}
+
+.dark-theme .messageDiv {
+    background-color: #555 !important;
+    color: white !important;
+}
+
+.dark-theme .container {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 20px !important;
+}
+
+.dark-theme .card-body {
+    color: white !important;
+}
+
+.dark-theme .card-title, 
+.dark-theme .card-text {
+    color: white !important;
+}
